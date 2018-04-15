@@ -1,0 +1,7 @@
+extends layout.pug
+
+block content
+	h1 mon upload de fichier
+	form(method='POST', enctype='multipart/form-data', action='uploaddufichier')
+		input(type='file', name='monfichier', accept='.png', multiple='')
+		button(type='submit')  envoyer 
